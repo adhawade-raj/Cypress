@@ -1,0 +1,22 @@
+{
+  "name": "cypresautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browserc chrome",
+    "recordDashboardTest": "npm run test --record --key a0d04e32-9a5d-4328-abaa-207f18d2b351 --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.0",
+    "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.2.0",
+    "@cypress/browserify-preprocessor": "latest"
+  }
+}
