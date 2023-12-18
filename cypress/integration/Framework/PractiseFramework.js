@@ -13,9 +13,7 @@ cy.get("input[name='name']:nth-child(2)").should('have.value','bob')
 
 cy.get(":nth-child(2) > .nav-link").click()
 
-// this.data.productName.forEach(function(element) {
-//     cy.selectProduct(element)    
-// });
+
 cy.selectProduct("Blackberry")
 cy.selectProduct("Nokia Edge")  
 cy.get("a[class='nav-link btn btn-primary']").click()
